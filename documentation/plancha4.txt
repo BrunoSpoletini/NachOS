@@ -1,0 +1,37 @@
+EJERCICIO 2:
+
+32 entradas en la TLB
+Sort:
+Paging: faults 5115, hits: 44055964, real hits: 44050849, hit ratio: 99.988%
+Matmult:
+Paging: faults 110, hits: 709405, real hits: 709295, hit ratio: 99.984%
+
+64 entradas en la TLB
+Sort:
+Paging: faults 39, hits: 44051495, real hits: 44051456, hit ratio: 100.000%
+Matmult:
+Paging: faults 47, hits: 709352, real hits: 709305, hit ratio: 99.993%
+
+Consideramos que seria mejor usar 32 entradas en la TLB ya que el "hit ratio" es casi 
+igual en ambos casos pero 64 entradas ocasionaria que se use mucha memoria de la cache
+para una mejora no tan notable.
+
+EJERCICIO 6:
+
+PRPOLICY_FIFO
+Sort:
+Paging: faults 5115, hits: 44055964, real hits: 44050849, hit ratio: 99.988%
+Matmult:
+Paging: faults 110, hits: 709405, real hits: 709295, hit ratio: 99.984%
+
+PRPOLICY_CLOCK
+Sort:
+Paging: faults 1893, hits: 44053031, real hits: 44051138, hit ratio: 99.996%
+Matmult:
+Paging: faults 118, hits: 709411, real hits: 709293, hit ratio: 99.983%
+
+PRPOLICY_LRU
+Sort:
+Paging: faults 4500, hits: 44055810, real hits: 44051310, hit ratio: 99.990%
+Matmult:
+Paging: faults 82, hits: 709385, real hits: 709303, hit ratio: 99.988%
